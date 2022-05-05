@@ -1,0 +1,7 @@
+{
+  "name": "pawsib",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
