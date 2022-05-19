@@ -1,0 +1,70 @@
+ion-icon{
+    font-size: 40px;
+    color:#263895;
+}
+ion-content{
+    --background: #FEF9F0;
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .list h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900, bold;
+        color:#212121;
+        font-size: 20px;
+    }
+    .list ion-list{
+        background-color: #FEF9F0;
+    }
+
+    ion-item {
+        --background: #ffffff;
+        img{
+        height: 30px;
+        width:30px;
+        }
+        ion-label{
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900, bold;
+            color:#263895;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        ion-radio{
+           --color:#263895;
+           --color-checked:#263895;
+        }
+    }
+    .list2 h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900, bold;
+        color:#212121;
+        font-size: 20px;
+    }
+    .list2{
+        ion-item img{
+            height: 20px;
+            width:20px;
+        }
+        ion-list{
+            background-color: #FEF9F0;
+        }
+    }
+    .next{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ion-button{
+            height: 55px;
+            width: 290px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            --background: #EF3D26;
+            font-size: 16px;
+        }
+    }
+}

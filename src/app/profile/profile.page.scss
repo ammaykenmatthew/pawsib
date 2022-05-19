@@ -1,0 +1,78 @@
+ion-header{
+    .arrowHead ion-icon{
+        font-size: 40px;
+        color:#263895;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .userProfile img{
+        border-radius: 50%;
+        height: 140px;
+        color:black;
+        border-style: solid;
+        margin-left: 125px;
+    }
+    .details h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 36px;
+        margin-left: 5px;
+    }
+    .details ion-icon{
+        color:#7a7a7a;
+        font-size: 36px;
+    }
+    .details ion-label{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        color:#898989;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .details p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+    }
+
+}
+
+ion-content{
+    --background: #FEF9F0;
+       
+    .joinButton{
+        ion-button{
+            height: 55px;
+            width: 390px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color:#212121;
+            font-style: normal;
+            --background: #FFFFFF;
+            font-size: 12px;
+    
+        }
+
+    }
+    .joinButton ion-icon{
+        font-size: 30px;
+        margin-left: 50px;
+        color:#212121;
+    }
+    .signout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    ion-button{
+        height: 55px;
+        width: 290px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        --background: #EF3D26;
+        font-size: 20px;
+    }
+}
+}

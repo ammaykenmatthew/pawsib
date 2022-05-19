@@ -1,0 +1,48 @@
+
+ion-content{
+    --background: #FEF9F0;
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .header h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 45px;
+    }
+    .header p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900, bold;
+        color:#212121;
+        font-size: 16px;
+    }
+    ion-button{
+        height: 55px;
+        width: 290px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        --background: #EF3D26;
+        font-size: 16px;
+
+    }
+    .joinas{
+        ion-button{
+        height: 55px;
+        width: 290px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #263895;
+        --background: #FEF9F0;
+        border: 2px solid #263895;
+        border-radius:25px;
+        font-size: 13px;
+        }
+    }
+
+}

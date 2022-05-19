@@ -1,0 +1,58 @@
+<ion-header>
+<ion-toolbar>
+  <div class="petName">
+    <h4>{{pet.name}}</h4>
+  </div>
+  <ion-buttons slot="end">
+  <ion-button (click) ="closeModal()">
+    <ion-icon slot="start" name="close"></ion-icon>
+  </ion-button> 
+</ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="petProfile">
+    <img src="assets/pics/servicePic.png" class="center"><!--[src] = "pet.image"-->
+  </div>
+  <div class="ion-padding">
+    <ion-list class="details">
+      <ion-item lines="none">
+        <h4>Profile</h4>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Pet Name: </ion-label>
+        <p slot="end">{{pet.name}}</p>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Type: </ion-label>
+        <p slot="end">{{pet.type}}</p>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Breed: </ion-label>
+        <p slot="end">{{pet.breed}}</p>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Gender: </ion-label>
+        <p slot="end">{{pet.gender}}</p>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Age: </ion-label>
+        <p slot="end">{{pet.age}}</p>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Owner: </ion-label>
+        <p slot="end">{{pet.user_id}}</p> <!--UserName of Owner post-->
+      </ion-item>
+    </ion-list>
+    <br>
+    <div class="editButt">
+    <ion-button (click) = "openEditModal()">Edit Profile</ion-button>
+    </div>
+    <div class="deleteButt" >
+    <ion-button (click)="onDeletePet()" >Remove Pet</ion-button>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <h4>{{isEditMode ? 'Update ': 'Add'}} a Pet</h4>
+    <ion-buttons slot="end">
+      <ion-button (click) ="dismiss()">
+        <ion-icon slot="start" name="close" color="danger"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <div class="petImg">
+    <ion-icon name="camera-outline"></ion-icon> <!--Add Photo Function-->
+  </div>
+  <form [formGroup]="petForm" (ngSubmit)="submitForm()" novalidate>
+    <div class="inputs">
+      <p>Pet Name: </p>
+      <ion-input type ="text" formControlName="name"  placeholder="Pet's Name" required></ion-input>
+
+      <p>Type: </p>
+      <ion-input type ="text" formControlName="type"  placeholder="E.g.. Dog, Cat." required></ion-input>
+
+      <p>Breed: </p>
+      <ion-input type ="text" formControlName="breed"  placeholder="E.g.. Pomeranian." required></ion-input>
+
+      <p>Gender: </p>
+      <ion-input type ="text" formControlName="gender"  placeholder="Pet's Gender" required></ion-input>
+
+      <p>Age: </p>
+      <ion-input type ="text" formControlName="age"  placeholder="Age" required></ion-input>
+      
+      <br>
+      <div class="submitButton">
+        <ion-button expand="block" type="submit" shape="round" [disabled]="petForm.invalid">
+          {{isEditMode ? 'Update ': 'SUBMIT'}}</ion-button>
+      </div>
+    </div>
+
+
+  </form>
+</ion-content>

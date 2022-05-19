@@ -1,27 +1,149 @@
-#container {
-  text-align: center;
+ion-header{
+  .header img{
+    height: 45px;
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .header ion-icon{
+    font-size: 38px;
+    color: #EF3D26;
+    margin-left: 120px;
+    background-color: #FEF9F0;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  }
+  .header h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#898989;
+    font-size: 26px;
+    padding-left: 25px;
+  }
+  .header h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color:#EF3D26;
+    font-size: 36px;
+    padding-left: 25px;
+  }
+  
+  .topButt ion-button{
+    display: inline-block;
+    height: 35px;
+    width: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    --background: #EF3D26;
+    font-size: 13px;
+    margin-left: 10px;
+   
+  }
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+ion-content{
+  --background: #FEF9F0;
+  
+  .text1 h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#212121;
+    font-size: 19px;
+    padding-left: 15px;
+  }
+  .PetServiceButton{
+    background-color: #FFFFFF;
+    width: 330px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border-style: solid;
+  }
+  .PetServiceButton img{
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+  }
+  .PetServiceButton p{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#212121;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .PetServiceButton ion-icon{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color:#212121;
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
+  .AdoptButton{
+    background-color: #FFFFFF;
+    width: 330px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border-style: solid;
+  }
+  .AdoptButton img{
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+  }
+  .AdoptButton p{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#212121;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .AdoptButton ion-icon{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color:#212121;
+  }
 
-  margin: 0;
-}
+  .NeedsButton{
+    background-color: #FFFFFF;
+    width: 330px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border-style: solid;
+  }
+  .NeedsButton img{
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+  }
+  .NeedsButton p{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#212121;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
 
-#container a {
-  text-decoration: none;
+  }
+  .NeedsButton ion-icon{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 5px;
+    color:#212121;
+  }
 }

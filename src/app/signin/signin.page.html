@@ -1,0 +1,29 @@
+
+<ion-content>
+  <div class="title">
+    <h4>Sign In</h4>
+  </div>
+<form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>
+  <div class="loginForm">
+  <ion-input placeholder="Email Address" formControlName="email"  required></ion-input>
+  <br>
+  <ion-input placeholder="Password" type="password" formControlName="password" required></ion-input>
+  </div>
+
+  <div class="ion-margin-top ion-text-right forget">
+    <a href="#">Forgot Password?</a>
+  </div>
+
+  <div class="signBut">
+    <ion-button expand="block" shape="round" type="submit">SIGN IN</ion-button>
+  </div>
+
+  <!-- <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Close</a>
+  </div> -->
+
+  <div class="ion-margin-top ion-text-center need">
+    <h2>Need an account?<a href="signup()" class="underline">SIGN UP</a></h2> <!--<ion-router-link></ion-router-link>-->
+  </div>
+</form>
+</ion-content>

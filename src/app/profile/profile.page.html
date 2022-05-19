@@ -1,0 +1,39 @@
+<ion-header>
+ 
+  <div class="arrowHead">
+    <ion-icon name="arrow-back-outline" (click)="goToHome()"></ion-icon>
+  </div>
+  <br>
+  <div class="userProfile">
+    <img src="assets/pics/user.png" class="center">
+  </div>
+  <ion-list class="details">
+    <ion-item lines="none">
+      <h4>Profile</h4>
+      <p slot="end"><ion-icon name="create-outline"></ion-icon></p>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Full Name</ion-label>
+      <p slot="end">{{name}}</p>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Email Address</ion-label>
+      <p slot="end">{{email}}</p>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Phone Number</ion-label>
+      <p slot="end">{{number}}</p>
+    </ion-item>
+  </ion-list>
+ 
+</ion-header>
+
+<ion-content>
+    <div class="joinButton">
+      <ion-button  expand="block"><ion-icon name="heart-circle-outline"></ion-icon>Join as a pet service provider <ion-icon name="chevron-forward-outline"></ion-icon></ion-button>
+    </div>
+    <br>
+    <div class="signout">
+    <ion-button  expand="block" shape="round" (click)="logout()">SIGN OUT <ion-icon name="log-out-outline"></ion-icon></ion-button>
+  </div>
+</ion-content>

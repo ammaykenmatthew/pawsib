@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" (click)="welcome()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="header">
+    <img src="assets/pics/pawpaw.png"/>
+  </div>
+  <div class="list">
+    <h4>Which service will you provide?</h4>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="value_selected1" value="biff"> <!-- -->
+        <ion-item>
+          <img src="assets/pics/sitter.png"/>
+          <ion-label>Pet Sitter</ion-label>
+          <ion-radio slot="end" value="Sitter"  name="sitter"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <img src="assets/pics/groomer.png"/>
+          <ion-label>Pet Groomer</ion-label>
+          <ion-radio slot="end" value="Groomer"  name="groomer"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <img src="assets/pics/trainer.png"/>
+          <ion-label>Pet Trainer</ion-label>
+          <ion-radio slot="end" value="Trainer" name="trainer"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+  <br>
+  <!--WHERE WILL YOU CONDUCT-->
+  <div class="list2">
+    <h4>Where will you conduct your service?</h4>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="value_selected2" value="baff">
+        <ion-item>
+          <img src="assets/pics/home.png"/>
+          <ion-label>Customer's Place</ion-label>
+          <ion-radio slot="end" value="customerP" name="customerP"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <img src="assets/pics/shop.png"/>
+          <ion-label>My Shop</ion-label>
+          <ion-radio slot="end" value="shop" name="shop"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+  {{value_selected1}}
+  {{value_selected2}}
+  <br>
+  <br>
+  <div class="next">
+    <ion-button [disabled]="!value_selected1" full ion-button round="true" expand="block" shape="round" (click)="submitRole()">Proceed</ion-button> 
+  </div>
+</ion-content>
