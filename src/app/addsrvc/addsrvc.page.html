@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <h4>{{isEditMode ? 'Update ': 'Provide your'}} Service</h4>
+    <ion-buttons slot="end">
+      <ion-button (click) ="dismiss()">
+        <ion-icon slot="start" name="close" color="danger"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <div class="petImg">
+    <ion-icon name="camera-outline"></ion-icon> <!--Add Photo Function-->
+  </div>
+  <form [formGroup]="serviceForm" (ngSubmit)="submitForm()" novalidate>
+    <div class="inputs">
+      <p>Full Name: </p>
+      <ion-input type ="text" formControlName="fullname"  placeholder="Full Name" required></ion-input>
+
+      <p>Email: </p>
+      <ion-input type ="text" formControlName="email"  placeholder="Email Address" required></ion-input>
+
+      <p>Contact Number: </p>
+      <ion-input  maxlength="10" type ="text" formControlName="cpNumber"  placeholder="CP Number" required></ion-input>
+
+      <p>Service: </p>
+      <ion-input type ="text" formControlName="role"  placeholder="Service Provided" required></ion-input>
+
+      <p>Address: </p> 
+      <ion-input type ="text" formControlName="address"  placeholder="Address" required></ion-input>
+      
+      <br>
+      <div class="submitButton">
+        <ion-button expand="block" type="submit" shape="round" [disabled]="serviceForm.invalid">
+          {{isEditMode ? 'Update ': 'SUBMIT'}}</ion-button>
+      </div>
+    </div>
+
+
+  </form>
+</ion-content>
+

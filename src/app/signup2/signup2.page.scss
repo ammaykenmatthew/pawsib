@@ -1,0 +1,138 @@
+ion-icon{
+    font-size: 40px;
+    color:#263895;
+}
+
+.create h4{
+    color: #263895;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 37px;
+    padding-left: 10px;
+}
+
+.inputs{
+    ion-input{
+        width: 350px;
+        height: 100;
+        --background: #FEF9F0;
+        --placeholder-color: #B4B4B4;
+        --placeholder-font-style: normal;
+    }
+    span {
+        ion-icon{
+            font-size: 15px;
+            color:#263895;
+        }
+
+    }
+    .error{
+        font-size: 15px;
+        color: #263895;
+    }
+}
+.inputs p{
+    color: #898989;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.inputs a{
+    color: #EF3D26;
+}
+.inputs{
+    .span .error{
+        ion-icon{
+            font-size: 15px;
+            color:#263895;
+        }
+        font-size: 15px;
+    }
+}
+ion-item{
+    ion-checkbox{
+        --checkmark-color:#FFFF;
+        --background-checked: #EF3D26;
+        --border-color-checked:#EF3D26;
+    }
+}
+.signBut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ion-button{
+        height: 55px;
+        width: 230px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        --background: #263895;
+        font-size: 20px;
+
+    }
+}
+.have{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #B4B4B4;
+    
+}
+.have h2{
+    color: #B4B4B4;
+    font-size: 18px;
+}
+.have a{
+   
+    color: #263895;
+    font-size: 18px;
+}
+.list h4{
+    color: #898989;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+
+ion-item {
+    --background: #ffffff;
+    img{
+    height: 30px;
+    width:30px;
+    }
+    ion-label{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900, bold;
+        color:#263895;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    ion-radio{
+       --color:#263895;
+       --color-checked:#263895;
+    }
+}
+.list2 h4{
+    color: #898989;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.list2{
+    ion-item img{
+        height: 20px;
+        width:20px;
+    }
+   
+}

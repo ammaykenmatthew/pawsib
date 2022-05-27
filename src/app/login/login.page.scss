@@ -37,4 +37,18 @@ ion-content{
         font-size: 25px;
         margin-left: 7px;
     }
+    .joinas{
+        ion-button{
+        height: 55px;
+        width: 230px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #263895;
+        --background: #FEF9F0;
+        border: 2px solid #263895;
+        border-radius:25px;
+        font-size: 10px;
+        }
+    }
 }

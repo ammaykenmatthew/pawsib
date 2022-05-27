@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="petName">
+      <h4>{{req.fullName}}</h4>
+    </div>
+    <ion-buttons slot="end">
+    <ion-button (click) ="closeModal()">
+      <ion-icon slot="start" name="close"></ion-icon>
+    </ion-button> 
+  </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <div class="petProfile">
+      <img src="assets/pics/servicePic.png" class="center"><!--[src] = "pet.image"-->
+    </div>
+    <div class="ion-padding">
+      <ion-list class="details">
+        <ion-item lines="none">
+          <h4>Request Details</h4>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Full Name: </ion-label>
+          <p slot="end">{{req.fullName}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Email Address: </ion-label>
+          <p slot="end">{{req.eMail}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Contact Number: </ion-label>
+          <p slot="end">{{req.cpNumber}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Request Details: </ion-label>
+          <p slot="end">{{req.details}}</p>
+        </ion-item>
+      </ion-list>
+      <br>
+      <div class="deleteButt" >
+      <ion-button>Remove Request</ion-button>
+      </div>
+  
+    </div>
+  </ion-content>
+  

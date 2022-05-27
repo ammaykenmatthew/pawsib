@@ -23,28 +23,24 @@
     <ion-input type ="text" formControlName="email" placeholder="Enter your email address" class="" required></ion-input>
     <!-- <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
       <ion-icon name="information-circle-outline"></ion-icon>Email is required.
-    </span>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
-      <ion-icon name="information-circle-outline"></ion-icon>Enter valid email.
     </span> -->
+    
 
     <p>Phone Number</p>
     <ion-input maxlength="10" formControlName="number" placeholder="Enter your Phone Number" required></ion-input>
     <!-- <span class="error ion-padding" *ngIf="isSubmitted && errorControl.number.errors?.required">
       <ion-icon name="information-circle-outline"></ion-icon>Phone number is required.
-    </span>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.number.errors?.pattern">
-      <ion-icon name="information-circle-outline"></ion-icon>Only numbers are allowed.
     </span> -->
+    
 
     <p>Password</p>
     <ion-input type="password" formControlName="password"  placeholder="Password" required></ion-input>
     <!-- <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.required">
       <ion-icon name="information-circle-outline"></ion-icon> Password should not be empty.
-    </span> -->
-    <!-- <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.minlength">
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.minlength">
       Password should atleast be 8 characters long.
-    </span> --> <!--ILABAS PAG PRESENTATION-->
+    </span> -->
 
     <p>Confirm Password</p>
     <ion-input type="password" placeholder="Confirm Password" required></ion-input>

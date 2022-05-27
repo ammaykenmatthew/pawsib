@@ -39,6 +39,12 @@ export class ProfilePage implements OnInit {
     this.route.navigate(['/home'], {replaceUrl:true});
   }
 
+  goToLogin2(){
+    this.ionLoader.showLoader();
+    this.route.navigate(['/signup2'], {replaceUrl:true});
+  }
+  
+
   logout(){
     this._apiService.logout(this.users).subscribe((res)=>{
       console.log("SUCCESS", res);

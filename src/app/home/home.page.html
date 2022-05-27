@@ -18,17 +18,17 @@
   <h4>What are you looking for? </h4>
   </div>
   <br>
-  <div class="PetServiceButton" > <!-- (click)= "PetService1()"-->
+  <div class="PetServiceButton" (click)="goToPetService()" > <!-- (click)= "PetService1()"-->
     <img src="assets/pics/servicePic.png"/>
     <p>Pet Service <ion-icon name="chevron-forward-outline"></ion-icon></p>
   </div>
   <br>
-  <div class="AdoptButton" > <!-- (click)= "PetService1()"-->
+  <div class="AdoptButton" (click)="goToAdopt()"> <!-- (click)= "PetService1()"-->
     <img src="assets/pics/adoptPic.png"/>
     <p>Adopt a Pet <ion-icon name="chevron-forward-outline"></ion-icon></p>
   </div>
   <br>
-  <div class="NeedsButton" > <!-- (click)= "PetService1()"-->
+  <div class="NeedsButton" (click)="goToNeeds()"> <!-- (click)= "PetService1()"-->
     <img src="assets/pics/needsPic.png"/>
     <p>Pet Needs <ion-icon name="chevron-forward-outline"></ion-icon></p>
   </div>

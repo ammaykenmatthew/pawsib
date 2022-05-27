@@ -1,0 +1,62 @@
+ion-header{
+    ion-buttons ion-icon{
+        font-size: 30px;
+        color: red;
+    }
+    h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 36px;
+        margin-left: 15px;
+    }
+   
+}
+ion-content{
+    --background: #FEF9F0;
+
+
+    .petProfile img{
+        height: 100%;
+        margin-left: 20px;
+    }
+    .details{
+        background-color: #fff;
+    }
+    .details h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 36px;
+        margin-left: 5px;
+    }
+    .details ion-label{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        color:#898989;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .details p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+    }
+
+    .adoptButt ion-icon{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .adoptButt ion-button{
+        height: 55px;
+        width: 270px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        --background: #EF3D26;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    
+}

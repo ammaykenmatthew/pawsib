@@ -3,8 +3,10 @@ import { ModalController } from '@ionic/angular';
 import { AddpetPage } from '../addpet/addpet.page';
 import { PetsService } from '../Services/pets.service';
 import { Pets } from '../Services/pet.schema';
+import { Users } from '../Services/pet.schema';
 import { LoaderService } from '../Services/loader.service';
 import { take } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-details-pet',
@@ -14,7 +16,9 @@ import { take } from 'rxjs/operators';
 export class DetailsPetComponent implements OnInit {
   @Input() pet: Pets;
 
-  name:any;
+  @Input() user: Users;
+
+
   constructor(
     public modalCtrl: ModalController,
     private petsService: PetsService,

@@ -1,0 +1,80 @@
+<ion-header>
+  <div class="arrowHead">
+    <ion-icon name="arrow-back-outline" (click)="goToHome()"></ion-icon>
+  </div>
+  <div class="petNeeds">
+    <h2>Pet Needs</h2>
+    <p>Find your pet needs.</p>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="shops">
+    <h4>Popular Shops: </h4>
+    <div class="shop1"> <!----> 
+      <img src="assets/pics/petShop.jpg"/>
+      <p><a href="https://shopee.ph/effpp">Pet Shop</a></p>
+    </div>
+    <div class="shop2">
+      <img src="assets/pics/theFur.jpg"/>
+      <p><a href="https://shopee.ph/thefurlifephilippines">The Fur Life Co.</a></p>
+    </div>
+    <div class="shop3">
+      <img src="assets/pics/dogePet.png"/>
+      <p><a href="https://shopee.ph/dogepetshop.ph">Doge Pet Shop</a></p>
+    </div>
+    <div class="shop4">
+      <img src="assets/pics/petGrooming.jpg"/>
+      <p><a href="https://shopee.ph/petgroomingsupplies">PGS Shop</a></p>
+    </div>
+  </div>
+  <br>
+  <div class="recom">
+    <h4>Popular Items</h4>
+    <ion-slides [options]="sliderConfig">
+      <ion-slide>
+       <ion-card>
+        <div class="need1">
+          <img src="assets/pics/potty.JPG"/>
+          <p><a href="https://tinyurl.com/2p8hrkzh">Puppy Training Potty Pad Pet Indoor Toilet</a></p>
+        </div>
+      </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <div class="need2">
+            <img src="assets/pics/bowl.JPG"/>
+            <p><a href="https://tinyurl.com/mpnskpuc">2 in 1 Stainless Bowl for Dogs and Cats</a></p>
+          </div>
+      </ion-card>
+      </ion-slide>
+      <ion-slide>
+       <ion-card>
+        <div class="need3">
+          <img src="assets/pics/cute.JPG"/>
+          <p><a href="https://tinyurl.com/53vv7knk">Pet cute comic cartoon printed vest clothes</a></p>
+        </div>
+      </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+         <div class="need4">
+           <img src="assets/pics/squeaky.JPG"/>
+           <p><a href="https://tinyurl.com/3es8tes5">Dog Sports Squeaky Teether Sounding Toy</a></p>
+         </div>
+       </ion-card>
+       </ion-slide>
+       <ion-slide>
+        <ion-card>
+         <div class="need5">
+           <img src="assets/pics/bell.JPG"/>
+           <p><a href="https://tinyurl.com/2rzaya8b">Dog Training Bell Potty Training Bells with Non-Skid Rubber Base</a></p>
+         </div>
+       </ion-card>
+       </ion-slide>
+    </ion-slides>
+    <br>
+  <br>
+  </div>
+  
+</ion-content>

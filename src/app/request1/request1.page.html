@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <h4> Request a Service</h4>
+    <ion-buttons slot="end">
+      <ion-button (click) ="dismiss()">
+        <ion-icon slot="start" name="close" color="danger"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <form [formGroup]="reqForm" (ngSubmit)="submitForm()" novalidate>
+    <div class="inputs">
+      <p>Full Name: </p>
+      <ion-input type ="text" formControlName="fullName"  placeholder="Full Name" required></ion-input>
+
+      <p>Email: </p>
+      <ion-input type ="text" formControlName="eMail"  placeholder="Email Address" required></ion-input>
+
+      <p>Contact Number: </p>
+      <ion-input maxlength="10"  formControlName="cpNumber"  placeholder="Contact Number" required></ion-input>
+
+      <p>Details: </p>
+      <ion-input type ="text" formControlName="details"  placeholder="Detailed Request" required></ion-input>
+
+      <p>Service Id: </p>
+      <ion-input type ="text" formControlName="service_id"  placeholder="Service ID" required></ion-input>
+
+      <br>
+      <div class="submitButton">
+        <ion-button expand="block" type="submit" shape="round" [disabled]="reqForm.invalid">Submit</ion-button>
+      </div>
+    </div>
+
+
+  </form>
+</ion-content>

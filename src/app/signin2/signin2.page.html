@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="title">
+    <h4>Sign In as Service Provider</h4>
+  </div>
+<form [formGroup]="loginForm" (ngSubmit)="submitFormService()" novalidate>
+  <div class="loginForm">
+  <ion-input placeholder="Email Address" formControlName="email"  required></ion-input>
+  <br>
+  <ion-input placeholder="Password" type="password" formControlName="password" required></ion-input>
+  </div>
+
+  <div class="ion-margin-top ion-text-right forget">
+    <a href="#">Forgot Password?</a>
+  </div>
+
+  <div class="signBut">
+    <ion-button expand="block" shape="round" type="submit">SIGN IN</ion-button>
+  </div>
+
+  <!-- <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Close</a>
+  </div> -->
+
+  <div class="ion-margin-top ion-text-center need">
+    <h2>Need an account as 
+      <br>a Service Provider?
+      <a href="signup2()" class="underline">REGISTER</a></h2> 
+  </div>
+</form>
+</ion-content>

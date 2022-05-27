@@ -1,0 +1,72 @@
+ion-header{
+
+    .header img{
+        height: 45px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .header ion-icon{
+        font-size: 38px;
+        color: #EF3D26;
+        margin-left: 120px;
+        background-color: #FEF9F0;
+
+    }
+    .header h2{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 22px;
+        padding-left: 25px;
+    }
+    .header h3{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#898989;
+        font-size: 26px;
+        padding-left: 25px;
+    }
+    .header h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 26px;
+        padding-left: 25px;
+    }
+    
+    .topButt ion-button{
+        display: inline-block;
+        height: 35px;
+        width: 150px;
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        --background: #263895;
+        font-size: 13px;
+        margin-left: 10px;
+    
+    }
+
+}
+ion-content{
+    --background: #FEF9F0;
+    .appointments h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#263895;
+        font-size: 26px;
+        padding-left: 20px;
+    }
+    .appointments ion-icon{
+        margin-left: 70px;
+    }
+    .list ion-list{
+        background-color: #FEF9F0;
+    }
+    .list ion-card-title{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+    }
+}

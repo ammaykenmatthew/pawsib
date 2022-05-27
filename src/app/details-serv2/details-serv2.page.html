@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="petName">
+      <h4>{{serv.fullname}}</h4>
+    </div>
+    <ion-buttons slot="end">
+    <ion-button (click) ="closeModal()">
+      <ion-icon slot="start" name="close"></ion-icon>
+    </ion-button> 
+  </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <div class="petProfile">
+      <img src="assets/pics/servicePic.png" class="center"><!--[src] = "pet.image"-->
+    </div>
+    <div class="ion-padding">
+      <ion-list class="details">
+        <ion-item lines="none">
+          <h4> Details</h4>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Service ID: </ion-label>
+          <p slot="end">{{serv.id}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Full Name: </ion-label>
+          <p slot="end">{{serv.fullname}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Email Address: </ion-label>
+          <p slot="end">{{serv.email}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Contact Number: </ion-label>
+          <p slot="end">{{serv.cpNumber}}</p>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Service Provided: </ion-label>
+          <p slot="end">{{serv.role}}</p>
+        </ion-item>
+        <br>
+        <div class="loc">
+        <ion-item lines="none">
+          <ion-label>Location: <br></ion-label>
+          <p>{{serv.address }}</p>
+        </ion-item>
+        </div>
+      </ion-list>
+      <br>
+      <p><ion-icon name="alert-circle-outline"></ion-icon>Preferably, contact the service provider thru given information</p>
+      <div class="adoptButt">
+        <ion-button expand="block" shape="round" (click)="goToRequest1()">Select Service</ion-button>
+        </div>
+  
+    </div>
+  </ion-content>
+  

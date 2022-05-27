@@ -8,8 +8,6 @@ import { AddpetPage } from '../addpet/addpet.page';
 import { ViewpetPage } from '../viewpet/viewpet.page';
 
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -64,5 +62,17 @@ export class HomePage implements OnInit{
       cssClass: 'viewpet-modal',
     })
     return await modal.present();
+  }
+
+  goToPetService(){
+    this.route.navigate(['/pspage']);
+  }
+
+  goToAdopt(){
+    this.route.navigate(['/adopt']);
+  }
+
+  goToNeeds(){
+    this.route.navigate(['/petneeds']);
   }
 }

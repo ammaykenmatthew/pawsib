@@ -9,10 +9,7 @@ export class Pets{
     
 }
 export class Users{
-    public id: number;
     public name: string;
-    public number: number;
     public email: string;
-    public role: string;
-    public place: string;
+    public number: string;
 }

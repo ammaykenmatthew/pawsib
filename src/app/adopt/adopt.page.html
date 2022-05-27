@@ -1,0 +1,35 @@
+<ion-header>
+  <div class="arrowHead">
+    <ion-icon name="arrow-back-outline" (click)="goToHome()"></ion-icon>
+  </div>
+  <div class="adoptPet">
+    <h2>Adopt a Pet</h2>
+    <p>Adopting is helping.</p>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="avlblpets">
+    <br>
+    <h2>Available Pets </h2>
+  <div class="pets">
+  <ion-card *ngFor="let pet of pets$|async" (click)="openDetailModal(pet)">
+    <ion-card-content>
+     <!-- <ion-grid> -->
+      <!-- <ion-row>  -->
+        <ion-col > <!--size="3"-->
+          <ion-thumbnail>
+            <img src="assets/pics/dogImg.png" /> <!--[src] = pet.image-->
+          </ion-thumbnail>
+        </ion-col>
+        <ion-col > <!--size="9"-->
+          <ion-card-title>Name: {{pet.name}}</ion-card-title>
+          <ion-card-title>Breed: {{pet.breed}}</ion-card-title> <!--Posted by:-->
+        </ion-col>
+      <!-- </ion-row> -->
+    <!-- </ion-grid> -->
+  </ion-card-content>
+  </ion-card>
+</div>
+</div>
+</ion-content>

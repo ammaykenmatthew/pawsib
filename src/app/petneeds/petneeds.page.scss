@@ -1,0 +1,208 @@
+ion-header{
+    .arrowHead ion-icon{
+        font-size: 40px;
+        color:#263895;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .petNeeds h2{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .petNeeds p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+ion-content{
+    --background: #FEF9F0;
+    .shops h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#263895;
+        font-size: 30px;
+        margin-left: 25px;
+    }
+    .shops{
+        display: inline-block;
+        margin-left: -15px;
+    }
+    .shop1{
+        display: inline-block;
+        margin-left: 70px;
+        margin-bottom: 50px;
+        background-color: white;
+        width: 130px;
+        border-style: solid;
+        border-radius: 15px;
+
+
+    }
+    .shop1 img{
+        height: 100px;
+        width: 100x;
+        margin-left: 12px;
+
+    }
+    .shop1 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 30px;
+        
+    }   
+    //SHOP2
+    .shop2{
+        display: inline-block;
+        margin-left: 40px;
+        margin-bottom: 50px;
+        background-color: white;
+        width: 130px;
+        border-style: solid;
+        border-radius: 15px;
+
+    }
+    .shop2 img{
+        height: 100px;
+        width: 100x;
+        margin-left: 12px;
+
+    }
+    .shop2 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 5px;
+       
+    }
+    //SHOP 3
+    .shop3{
+        display: inline-block;
+        margin-left: 70px;
+        background-color: white;
+        width: 130px;
+        border-style: solid;
+        border-radius: 15px;
+       
+
+    }
+    .shop3 img{
+        height: 100px;
+        width: 100x;
+        margin-left: 12px;
+
+    }
+    .shop3 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 5px;
+      
+    }
+    //SHOP4
+    .shop4{
+        display: inline-block;
+        margin-left: 45px;
+        background-color: white;
+        width: 130px;
+        border-style: solid;
+        border-radius: 15px;
+
+    }
+    .shop4 img{
+        height: 100px;
+        width: 100x;
+        margin-left: 12px;
+
+    }
+    .shop4 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 20px;
+        
+    }
+    //RECOMM
+    .recom{
+        background-color: #fff;
+    }
+    .recom h4{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#263895;
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    .recom ion-slide{
+        margin-left: -90px;
+    }
+    .recom ion-card{
+        height: 170px;
+        width: 150px;
+      
+    }
+    .need1 img{
+        height: 100px;
+        width: 100px;
+    }
+    .need1 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 13px;
+    }
+
+    .need2 img{
+        height: 100px;
+        width: 100px;
+    }
+    .need2 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 13px;
+    }
+
+    .need3 img{
+        height: 100px;
+        width: 100px;
+    }
+    .need3 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 13px;
+    }
+
+    .need4 img{
+        height: 100px;
+        width: 100px;
+    }
+    .need4 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 13px;
+    }
+
+    .need5 img{
+        height: 100px;
+        width: 100px;
+    }
+    .need5 p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 13px;
+    }
+}

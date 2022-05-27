@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" routerLink></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="create">
+    <h4>Register as a Service Provider</h4>
+  </div>
+<form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+  <div class="inputs">
+    <p>Full Name</p>
+    <ion-input type ="text" formControlName="name"  placeholder="Enter Full Name" required></ion-input> <!--[(ngModel)]="name"-->
+  
+
+    <p>Email Address</p>
+    <ion-input type ="text" formControlName="email" placeholder="Enter your email address" class="" required></ion-input>
+    
+
+    <p>Phone Number</p>
+    <ion-input maxlength="10" formControlName="number" placeholder="Enter your Phone Number" required></ion-input>
+    
+    <!-- <div class="list">
+      <h4>Which service will you provide?</h4>
+      <ion-list>
+      
+          <ion-item>
+            <img src="assets/pics/sitter.png"/>
+            <ion-label>Pet Sitter</ion-label>
+            <ion-radio slot="end" value="Sitter" formControlName="role"></ion-radio>
+          </ion-item>
+         {{role}}
+          <ion-item>
+            <img src="assets/pics/groomer.png"/>
+            <ion-label>Pet Groomer</ion-label>
+            <ion-radio slot="end" value="Groomer"  formControlName="role"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <img src="assets/pics/trainer.png"/>
+            <ion-label>Pet Trainer</ion-label>
+            <ion-radio slot="end" value="Trainer" formControlName="role"></ion-radio>
+          </ion-item>
+      </ion-list>
+    </div>
+    <br>
+    <div class="list2">
+      <h4>Where will you conduct your service?</h4>
+      <ion-list>
+          <ion-item>
+            <img src="assets/pics/home.png"/>
+            <ion-label>Customer's Place</ion-label>
+            <ion-radio slot="end" value="customerP" formControlName="place"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <img src="assets/pics/shop.png"/>
+            <ion-label>My Shop</ion-label>
+            <ion-radio slot="end" value="shop" formControlName="place"></ion-radio>
+          </ion-item>
+      </ion-list>
+    </div> -->
+
+    <p>Password</p>
+    <ion-input type="password" formControlName="password"  placeholder="Password" required></ion-input>
+ 
+
+    <p>Confirm Password</p>
+    <ion-input type="password" placeholder="Confirm Password" required></ion-input>
+ 
+    <br>
+    
+    <ion-item>
+      <p>By registering, I agree with <a>Terms and Conditions</a> and 
+        <a>Privacy Policy</a> of Pawsibilities
+      </p>
+      <ion-checkbox  checked slot="start"></ion-checkbox>
+    </ion-item>
+    <br>
+
+    <div class="signBut">
+      <ion-button expand="block" type="submit" shape="round">SIGN UP</ion-button>
+    </div>
+
+    <div class="have">
+      <h2>Have an account?<a href="login()" class="underline">SIGN IN</a></h2> <!--<ion-router-link></ion-router-link>-->
+    </div>
+
+  </div>
+</form>
+</ion-content>

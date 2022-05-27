@@ -1,0 +1,136 @@
+ion-header{
+    .arrowHead ion-icon{
+        font-size: 40px;
+        color:#263895;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .petService h2{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#EF3D26;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .petService p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+ion-content{
+    --background:  #FEF9F0;
+    .center{
+        background-color:  #FEF9F0;
+    }
+    .avlbl h2{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color:#212121;
+        font-size: 25px;
+        margin-left: 20px; 
+        background-color:  #FEF9F0; 
+    }
+    //services content
+    .services{
+        margin-left: 15px;
+    }
+    .servLooks{
+        background-color: #FFFFFF;
+        width: 330px;
+        margin-left: 15px;
+        border-radius: 10px;
+        border-style: solid;
+      }
+      .servLooks img{
+        display: inline-block;
+        vertical-align: top;
+        height: 100px;
+      }
+      .servLooks p{
+        display: inline-block;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#212121;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+      .servLooks ion-icon{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 5px;
+        color:#212121;
+      }
+
+    .recommend{
+        background-color: white;
+    }
+    .recommend h2 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color:#263895;
+        font-size: 26px;
+        padding-left: 20px;
+    }
+
+    .contents{
+        display: inline-block;
+    }
+    .firstClinic {
+        display: inline-block;
+        margin-left: 35px;
+       
+       
+    }
+    .firstClinic img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        
+    }
+
+    .secondClinic {
+        display: inline-block;
+        margin-left: 15px;
+       
+    }
+    .secondClinic img {
+        height: 150px;
+        width: 150px;
+       
+        border-radius: 10px;
+   
+    }
+
+    .thirdClinic {
+        display: inline-block;
+        margin-left: 35px;
+        margin-top:10px;
+       
+    }
+    .thirdClinic img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .fourthClinic {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top:10px;
+       
+    }
+    .fourthClinic img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    
+
+}

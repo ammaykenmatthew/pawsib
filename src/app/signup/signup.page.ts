@@ -43,9 +43,9 @@ isSubmitted = false;
   ngOnInit() {
     // this.ionicForm = this.formBuilder.group({
     //   name: ['', [Validators.required, Validators.minLength(2)]],
-    //   email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
-    //   number: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
-    //   password: ['', [Validators.required, Validators.pattern('^(([a-zA-Z][^:.*/}{;])*\d*)$'), Validators.minLength(8)]],
+    //   email: ['', [Validators.required, ]],
+    //   number: ['', [Validators.required, ]],
+    //   password: ['', [Validators.required, Validators.minLength(8)]],
     //   confirm_password: ['', [Validators.required]],
     // }); 
   }
@@ -99,28 +99,5 @@ isSubmitted = false;
   login(){
     this.route.navigate(['/login']);
   }
-
-
-
-
-//  submit(){
-//    let data = {
-//      name: this.name,
-//      email: this.email,
-//      number: this.number,
-//      password: this.password,
-//      confirm_password:this.confirm_password,
-//    }
-//    console.log(data);
-//       this._apiService.saveUserData(data).subscribe((res:any) => {
-//         console.log("SUCCESS",res);
-//         this.route.navigate(['/welcome']);
-//       },(error: any) => {
-//         console.log("Error",error);
-//       })
-//  }
- 
-
-
 
 }

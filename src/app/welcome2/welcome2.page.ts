@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoaderService } from '../Services/loader.service';
 
 @Component({
   selector: 'app-welcome2',
@@ -8,14 +9,18 @@ import { Router } from '@angular/router';
 })
 export class Welcome2Page implements OnInit {
 
-  constructor(private route: Router,) { }
+  constructor(
+    private route: Router,
+    private ionLoader: LoaderService,
+    ) { }
 
   ngOnInit() {
   }
   home(){
-    this.route.navigate(['/home'])
+    this.route.navigate(['/home']);
   }
-  home2(){
-    this.route.navigate(['/home2'])
+  goToLogin(){
+    this.ionLoader.showLoader();
+    this.route.navigate(['/login']);
   }
 }

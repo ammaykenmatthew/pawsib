@@ -1,0 +1,52 @@
+<ion-header>
+  <div class="arrowHead">
+    <ion-icon name="arrow-back-outline" (click)="goToHome()"></ion-icon>
+  </div>
+  <div class="petService">
+    <h2>Pet Service</h2>
+    <p>What service do you need?</p>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+    <div class="avlbl">
+      <h2>Available Services: </h2>
+    </div>
+    <br>
+    <div class="services">
+      <div class="servLooks" (click)="goToAll()"> <!--(click)="goToAll()"-->
+        <img src="assets/pics/servicePic.png"/>
+        <p>All Services <ion-icon name="chevron-forward-outline"></ion-icon></p>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="recommend">
+      <br>
+      <h2>Recommendations</h2>
+      <div class="contents">
+        <div class="firstClinic">
+          <img src="assets/pics/abHouseVet.jpg" />
+        </div>
+
+        <div class="secondClinic">
+          <img src="assets/pics/vetGapo.png" />
+        </div>
+
+        <div class="thirdClinic">
+          <img src="assets/pics/puss&boots.png" />
+        </div>
+
+        <div class="fourthClinic">
+          <img src="assets/pics/HappyPaws.png" />
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+</ion-content>
